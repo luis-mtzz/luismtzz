@@ -1,0 +1,20 @@
+# Global
+.DS_Store
+.env
+.env.*
+node_modules/
+dist/
+build/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite3
+.venv/
+.uv/
+
+# VSCode/IDE
+.vscode/
+.idea/
