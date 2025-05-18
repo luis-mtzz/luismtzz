@@ -13,6 +13,7 @@ dependencies = [
     "apscheduler",
     "python-dotenv",
     "alembic",
+    "httpx>=0.28.1",
 ]
 
 [project.optional-dependencies]

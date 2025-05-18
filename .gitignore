@@ -6,6 +6,8 @@ node_modules/
 dist/
 build/
 *.log
+*.pdf
+*.ini
 
 # Python
 __pycache__/
@@ -14,6 +16,7 @@ __pycache__/
 *.sqlite3
 .venv/
 .uv/
+*.lock
 
 # VSCode/IDE
 .vscode/

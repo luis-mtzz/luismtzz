@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../.env"))
 
 from app.db.base import Base
-from app.models import profile
+from app.models import profile, steam
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
