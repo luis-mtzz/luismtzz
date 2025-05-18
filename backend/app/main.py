@@ -5,6 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
 from app.api.v1.endpoints import profile
+from app.api.v1.endpoints import steam
 
 app = FastAPI(
     title="Porfolio webserver",
@@ -20,6 +21,7 @@ app.add_middleware(
 )
 
 app.include_router(profile.router, prefix="/api/v1", tags=["Profile"])
+app.include_router(steam.router, prefix="/api/v1", tags=["Steam"])
 static_dir = os.path.join(os.path.dirname(__file__), "static")
 if os.path.isdir(static_dir):
     app.mount("/static", StaticFiles(directory=static_dir), name="static")
